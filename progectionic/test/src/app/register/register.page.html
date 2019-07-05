@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+      <ion-back-button defaultHref="home"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+    <ion-item >
+        <ion-label position="floating">First Name</ion-label>
+        <ion-input  color="success" ngModel type="Text" name="First Name"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">Last Name</ion-label>
+        <ion-input ngModel type="Text" name="LastName"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">EMail</ion-label>
+        <ion-input ngModel type="EMail" name="EMail"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+        <ion-label position="floating">User Name</ion-label>
+        <ion-input ngModel type="Text" name="UserName"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input ngModel type="password" name="password"></ion-input>
+    </ion-item>
+    
+
+    <ion-button type="submit" expand="full" color="primary" (click)="go()" routerLink="/extrapage" routerDirection="root">Register</ion-button>
+</ion-content>

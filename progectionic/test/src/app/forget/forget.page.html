@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>forget</ion-title>
+        <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item>
+        <ion-label position="floating">phone number</ion-label>
+        <ion-input ngModel type="phonenumber" name="phonenumber"></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" expand="full" color="primary" (click)="go()" routerLink="/home" routerDirection="root">Login</ion-button>
+</ion-content>

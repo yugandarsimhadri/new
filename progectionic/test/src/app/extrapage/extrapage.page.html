@@ -1,0 +1,72 @@
+<!--<ion-header translucent="true" no-border >
+    <ion-toolbar>
+        <ion-title>extrap</ion-title>
+    </ion-toolbar>
+</ion-header>-->
+<ion-header>
+    <ion-toolbar color="secondary"[class.show-background]="showToobar">
+        <ion-buttons slot="start">
+            <ion-menu-button contextmenu="standard"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>extrap</ion-title>
+    </ion-toolbar>
+    <ion-buttons slot="end">
+        <ion-button (click)="openFacebook()">
+            <ion-icon slot="icon-only" name="logo-facebook">
+
+            </ion-icon>
+        </ion-button>
+    </ion-buttons>
+</ion-header>
+
+<ion-content class="bg-image no-scroll" fullscreen="true">
+
+    <ion-card>
+        <!--C:\Users\synsrinivas\Desktop\newprogectionic\test\src\assets\icon\4.jpg-->
+        <!--<ion-img src="assets\icon\4.jpg" style="width : 20% ; height : 20%"></ion-img>-->
+        <ion-card-header>
+            <ion-card-title text-center>{{name}}</ion-card-title>
+            <ion-card-subtitle text-center>Version {{version}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <p>The content for this card</p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <!-- <ion-icon name="pin" slot="start"></ion-icon> -->
+            <ion-label>Licencias</ion-label>
+            <ion-button fill="solid" slot="end" (click)="openViewLicenses()">Ver</ion-button>
+        </ion-item>
+        <ion-item>
+            <!-- <ion-icon name="pin" slot="start"></ion-icon> -->
+            <ion-label>Renuncia de Responsabilidad</ion-label>
+            <ion-button fill="solid" slot="end" (click)="openViewDisclaimer()">Ver</ion-button>
+        </ion-item>
+        <ion-card-content>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+        </ion-card-content>
+    </ion-card>
+    <ion-tabs>
+
+        <ion-tab-bar slot="bottom" class="bg-image no-scroll">
+            <ion-tab-button tab="tab1">
+                <ion-icon name="flash"></ion-icon>
+                <ion-label>Tab One</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="tab2">
+                <ion-icon name="apps"></ion-icon>
+                <ion-label>Tab Two</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="tab3">
+                <ion-icon name="send"></ion-icon>
+                <ion-label>Tab Three</ion-label>
+            </ion-tab-button>
+        </ion-tab-bar>
+
+    </ion-tabs>
+
+</ion-content>

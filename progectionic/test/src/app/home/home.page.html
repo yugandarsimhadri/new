@@ -1,0 +1,112 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <!--<ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+    </ion-buttons>-->
+        <ion-title color="black">
+            Home
+        </ion-title>
+      
+    </ion-toolbar>
+    
+
+
+            
+
+</ion-header>
+
+<ion-content padding class="background">
+    <!--<ion-navbar *navbar>
+
+      <ion-buttons start>
+      <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      </ion-buttons>
+
+    <ion-title>title</ion-title>
+
+      <ion-buttons end>
+       <button (click)="searchToggle()">
+       <ion-icon name="search"></ion-icon>
+     </button>
+     </ion-buttons>
+
+     </ion-navbar>-->
+
+
+    <br />
+    <br />
+    <br /><br />
+    <br />
+    <br />
+    <br />
+    <div>
+        <ion-ripple-effect></ion-ripple-effect>
+        <h1 color="success">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Ionic Devolopments in process</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h1>
+    </div>
+    <ion-tabs>
+
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="tab1" color="primary">
+                <ion-icon name="home"></ion-icon>
+                <ion-label>Home</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="tab2" color="primary">
+                <ion-icon name="apps"></ion-icon>
+                <ion-label>Feed</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="tab3" color="primary">
+                <ion-icon name="settings"></ion-icon>
+                <ion-label>Settings</ion-label>
+            </ion-tab-button>
+        </ion-tab-bar>
+
+    </ion-tabs>
+    <!--<ion-row style="height: h"></ion-row>-->
+    <ion-item color="primary">
+        <ion-label position="floating" size="small">UserName</ion-label>
+        <ion-input ngModel type="Text" name="UserName"></ion-input>
+    </ion-item>
+
+    <ion-item color="primary">
+        <ion-label position="floating" size="small">Password</ion-label>
+        <ion-input ngModel type="password" name="password"></ion-input>
+    </ion-item>
+    <ion-button shape="round" size="small" (click)="go()" routerLink="/register" routerDirection="root">Login</ion-button>
+    <ion-button shape="round" size="small" (click)="go()" routerLink="/login" routerDirection="root">dashboard</ion-button>
+    <ion-button shape="round" size="small" (click)="go()" routerLink="/extrapage" routerDirection="root">extrapage</ion-button>
+    <!--<ion-button type="submit" expand="small" color="primary" class="button button-assertive" (click)="go()" routerLink="/register" routerDirection="root">Login</ion-button>-->
+    <br />
+    <ion-button shape="round" size="small" (click)="go()" routerLink="/forget" routerDirection="root">Forgot Password</ion-button>
+    <ion-button shape="round" expand="small" (click)="go()" routerLink="/register" routerDirection="root">Create New Account</ion-button>
+
+    <!--<img src="assets/icon/123.jpg" style="width : 100% ; height : 100%">-->
+    <!--<ion-img style="width: 180px; height: 80px;" src="assets\icon\123.jpg"></ion-img>
+    <ion-list>
+        <ion-item>-->
+    <!--<ion-img src="assets\icon\123.jpg"></ion-img>-->
+    <!--</ion-item>-->       <!--C:\Users\synsrinivas\Desktop\newprogectionic\test\src\assets\icon\123.jpg-->
+    <!--</ion-list>-->
+</ion-content>
+<!--<ion-content padding>
+    <form #form="ngForm" (ngSubmit)="login(form)" method="post">
+        <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input ngModel type="email" name="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input ngModel type="password" name="password"></ion-input>
+        </ion-item>
+
+        <p text-right>Forgot Password?</p>
+
+        <ion-button type="submit" expand="full" color="primary">Login</ion-button>
+    </form>
+    <p text-center>Don't have a account?</p>
+    <ion-button expand="full" color="danger" (click)="registerModal()">Register</ion-button>
+</ion-content>-->
